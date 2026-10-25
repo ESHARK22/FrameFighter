@@ -208,7 +208,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 33554431
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -833,9 +833,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitch
   playableDirector: {fileID: 1908355139}
   timeline: {fileID: 11400000, guid: 69544099af58a4f49be9b587372fdfc7, type: 2}
-  skipMarkerStudio: {fileID: 11400000, guid: a2a60c2f25012435ab5d25eb71e76084, type: 2}
-  skipMarkerGame: {fileID: 11400000, guid: 3987ff6a9de9e40b1b420a86430db519, type: 2}
-  sceneToLoad: 0
+  skipSignal: {fileID: 11400000, guid: 22a56a4786bdc427cb9268689912670a, type: 2}
+  sceneToLoad: 1
 --- !u!114 &1908355143
 MonoBehaviour:
   m_ObjectHideFlags: 0
