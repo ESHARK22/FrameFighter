@@ -1,3 +1,4 @@
+using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -11,13 +12,15 @@ public class SceneSwitch : MonoBehaviour
     
     [Scene]
     public int sceneToLoad;
-    
-    private void Update()
+
+    private void OnEnable()
     {
-        // Wait for animations to finish
-        if (playableDirector.state != PlayState.Paused) return;
-        
-        Debug.Log("[IntroSceneSwitch] Switch to scene {sceneToLoad}");
+        playableDirector.stopped += SwitchScene;
+    }
+
+    private void SwitchScene(PlayableDirector _)
+    {
+        Debug.Log("[IntroSceneSwitch] Switching to scene {sceneToLoad}");
         SceneManager.LoadScene(sceneToLoad);
     }
 }
