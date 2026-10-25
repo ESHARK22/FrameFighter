@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
     [SerializeField]
+    [Required]
     private PlayableDirector playableDirector;
     
     [Scene]
